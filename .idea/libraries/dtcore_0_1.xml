@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dtcore-0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dtcore/build/libs/dtcore-0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

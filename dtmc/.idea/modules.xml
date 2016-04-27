@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DT.iml" filepath="$PROJECT_DIR$/../DT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dtcore/dtcore.iml" filepath="$PROJECT_DIR$/../dtcore/dtcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtmc.iml" filepath="$PROJECT_DIR$/dtmc.iml" />
+    </modules>
+  </component>
+</project>

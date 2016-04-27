@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dtcore/dtcore.iml" filepath="$PROJECT_DIR$/dtcore/dtcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtmc/grails-app/grails-app.iml" filepath="$PROJECT_DIR$/dtmc/grails-app/grails-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtci/grails-app/grails-app1.iml" filepath="$PROJECT_DIR$/dtci/grails-app/grails-app1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtcore/grails-app/grails-app2.iml" filepath="$PROJECT_DIR$/dtcore/grails-app/grails-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtcore/src/main/main.iml" filepath="$PROJECT_DIR$/dtcore/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtmc/out/production/production.iml" filepath="$PROJECT_DIR$/dtmc/out/production/production.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtmc/build/resources/resources.iml" filepath="$PROJECT_DIR$/dtmc/build/resources/resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtmc/grails-app/services/com/dt/dtmc/services/services.iml" filepath="$PROJECT_DIR$/dtmc/grails-app/services/com/dt/dtmc/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtcore/src/test/test.iml" filepath="$PROJECT_DIR$/dtcore/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtci/src/test/test1.iml" filepath="$PROJECT_DIR$/dtci/src/test/test1.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html {
+    min-height: 100%;
+}
+
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.login {
+    background: #002b68;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*background: #f1f1f1;*/
+    background: #ffffff;
+    font-size: 13px;
+}
+
+input, select {
+    height: 30px;
+}
+label {
+    font-weight: normal;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.panel-title a {
+    width: 100%;
+    display: inline-block;
+    color: #000000;
+}
+.panel-title a:hover, .panel-title a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+#table-list.dataTable thead th, #table-list.dataTable thead td {
+    padding: 0 10px;
+    line-height: 1;
+    border-color: #ddd;
+    border-bottom: transparent;
+}
+#table-list.dataTable tbody th, #table-list.dataTable tbody td {
+    padding: 0 10px;
+    line-height: 1;
+}
+#table-list_wrapper {
+    margin-bottom: 20px;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.form-control {
+    height: 28px;
+    font-size: 13px;
+    padding: 3px 12px;
+}
+
+.navbar .container {
+    width: auto;
+}
+
+.action-container {
+    float: right;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+/*
+    Pannel styling
+*/
+.panel-default>.blue-header {
+    /*background: #3755a4;*/
+    color: #ffffff;
+    /*background: #002b68;*/
+    background: #ededed;
+}
+.panel-body input {
+    margin-bottom: 15px;
+}
+.panel-body label {
+    font-weight: normal;
+    font-size: 13px;
+}
+.panel-body .btn-container {
+    /*text-align: center;*/
+    /*padding: 0 5px;*/
+    text-align: right;
+    padding: 0 15px;
+}
+
+
+
+/*
+    Data table styling
+*/
+.dataTables_filter input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 28px;
+}
+.dataTables_length select[multiple], select[size] {
+    height: 28px;
+}
+@media (min-width: 1200px) {
+    .container-fluid {
+        width: 1170px;
+    }
+}
+
+/*
+    Styling for footer section
+*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    /*background: #f1f1f1;*/
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.footer p {
+    margin: 10px 0;
+    clear: both;
+}
+.back-container a {
+    font-size: 23px;
+    text-decoration: none;
+    top: 4px
+}
+.white-anchor, .white-anchor:hover {
+    color: #ffffff;
+}
+
+.status-section {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    padding-top: 5px;
+
+}
+.login-error-message {
+    color: orange;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/*
+    Styling of card section
+*/
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.card-header {
+    display: block;
+    overflow: hidden;
+}
+.card-header h4 {
+    border-bottom: 1px solid;
+}
+.card-body {
+    padding-top: 10px;
+}
+.card-body a {
+    color: #000;
+}
+.clear-both{
+    clear: both;
+}
+
+/*
+    page not found
+*/
+.page-not-found {
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+}
+.error-text {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.sorry-message {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 20px 0 17px;
+}
+
+.previous-page {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.previous-page > a {
+    display: block;
+    font-size: 14px;
+    color: #ffff00;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.error-404 {
+    max-width: 300px;
+    display: inline-block;
+    margin: 100px 0;
+    width: 100%;
+}

@@ -1,0 +1,530 @@
+@import "global.css";
+/*
+    Login Panel styling
+*/
+.login-panel {
+    max-width: 300px;
+    display: inline-block;
+    margin: 100px 0;
+    width: 100%;
+}
+.login-panel img {
+    width: 90px;
+    height: auto;
+    padding-bottom: 25px;
+}
+.login-button {
+    background: #00BAF2;
+    color: #fff;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.blue-color, .get-password:hover, .get-password:active {
+    background: #00BAF2;
+}
+.cancel-btn {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #ffffff;
+}
+.cancel-btn:hover, .cancel-btn:active, .cancel-btn:focus {
+    color: #00BAF2;
+    text-decoration: none;
+
+}
+.login-button:hover {
+    color: #fff;
+}
+
+/*
+`   Nav bar styling
+*/
+.navbar-brand {
+    padding: 6px 0 6px 25px;
+    height: auto;
+}
+.dtci-dashboard .navbar-brand {
+    padding: 6px 0 6px 15px;
+}
+.dtci-dashboard .header-logo {
+    display: inline-block;
+    height: 37px;
+    width: auto;
+}
+.dtci-dashboard .glyphicon-arrow-left {
+    top: 6px;
+}
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-header,.navbar a:hover,.navbar a:visited,.navbar a:focus {
+    color: #ffffff;
+}
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover,
+.navbar.nav .open>a,.navbar .nav .open>a:focus,
+.navbar .nav .open>a:hover,.navbar .dropdown-menu>li>a:focus,
+.navbar .dropdown-menu>li>a:hover {
+    background-color: #3d566e;
+    color: white;
+}
+.navbar-fixed-top, .navbar-nav>li>.dropdown-menu {
+    background: #002b68;
+}
+.navbar-nav>li>.dropdown-menu {
+    top: 53px;
+}
+
+
+.parent-container {
+    margin: 66px auto 79px;
+}
+.well {
+    background: white;
+}
+.required {
+    color: #ff0000;
+}
+.overflow {
+    overflow: hidden;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.27);
+}
+
+.table>caption+thead>tr:first-child>td,
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td,
+.table>thead:first-child>tr:first-child>th {
+    /*color: #ffffff;*/
+    /*background: #3755a4;*/
+    /*background: #002b68;*/
+    background: #ededed;
+    /*border: transparent;*/
+    border-bottom: transparent;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+
+
+
+/* General Button */
+/* -------------- */
+.button {
+    position: relative;
+    margin: 0;
+    padding: 2px 14px;
+    background: #0d5287;
+    color: white;
+    font-size: 13px;
+}
+.btn {
+    font-size: 13px;
+}
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+/* Arrow Buttons */
+/* ------------- */
+.prev::after {
+    border-style: solid;
+}
+/* Back Button */
+.prev::after {
+    left: -22px;
+    border-color: transparent #0d5287 transparent transparent;
+    border-width: 11px;
+}
+.prev:hover {
+    color: #fff;
+}
+
+.right-content {
+    float: right;
+}
+
+/* Save button and Reset button styling*/
+.save-icon, .reset-icon, .common-icon {
+    position: absolute;
+    color: white;
+    top: 9px;
+    left: 12px;
+}
+
+.save-btn, .reset-btn {
+    padding: 6px 30px;
+}
+
+.relative-element {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.add-button {
+    float: right;
+    padding-bottom: 20px;
+}
+.input-column {
+    text-align: center;
+}
+
+.navbar .nav-tabs {
+    background: #002b68;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
+.nav>li>a:focus, .nav>li>a:hover {
+    border-radius: 0;
+}
+.tab-content>.tab-pane {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: transparent;
+}
+.select_btn_inline {
+    margin-top: 5px;
+    text-align: center;
+    padding: 0;
+}
+#btnLeft, #btnRight {
+    margin: 5px 0;
+}
+.back-container h4{
+    display: inline-block;
+}
+.top-bar {
+    margin-top: 5px;
+    float: right;
+    display: inline-block;
+}
+
+.header-logo {
+    padding: 0;
+    height: 37px;
+}
+
+table.dataTable tbody tr {
+    background-color: transparent;
+}
+/*
+    Breadcrumb styling
+*/
+/*.bread-crumb {*/
+/*color: #337ab7;*/
+/*display: none;*/
+/*}*/
+/*.bread-crumb a {*/
+/*color: #337ab7;*/
+/*}*/
+
+
+/*
+    Nav bar styling
+*/
+.nav.navbar-nav a {
+    font-size: 13px;
+}
+
+.navbar .nav-tabs>li.active>a,.navbar .nav-tabs>li.active>a:focus,.navbar .nav-tabs>li.active>a:hover,
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover {
+    background: #3d566e;
+    color: #ffffff;
+}
+
+.navbar .navbar-right > li > a:hover,
+.navbar .navbar-right > li > a:focus,
+.navbar .navbar-right > li > a:visited,
+.navbar-right > li > a:active {
+    background: transparent;
+}
+
+.navbar-right > li.logout > a:hover {
+    color: #D4D65B;
+}
+
+.navbar-nav>li.welcome-user>a {
+    padding-right: 0;
+}
+
+.welcome-user a {
+    padding: 15px 0;
+}
+
+/*
+    Styling for error messages
+*/
+.error, .error:focus, .error:active {
+    border-color: red;
+}
+.error-container {
+    display: block;
+    clear: both;
+}
+.error-message {
+    color: red;
+    display: block;
+    font-size: 13px;
+}
+
+
+/*
+    Styling for image block section in admin dashboard page.
+*/
+.image-block {
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+    vertical-align: bottom;
+    /*width: 20%;*/
+    display: inline-block;
+    /*margin: 7px 5px;*/
+    margin: 17px 15px;
+    border: 2px solid #002b68;
+    background: white;
+}
+.image-block img {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    /*border-radius: 20px;*/
+}
+.image-block a {
+    display: inline-block;
+    position: relative;
+}
+.image-block a:hover {
+    color: #ffffff;
+}
+.image-block p:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.54);
+}
+.image-block p {
+    padding: 0 5px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*background-color: rgba(3,3,3,0.5);*/
+    background: #002b68;
+    color: white;
+    /*padding: 80px 10px 0;*/
+    font-size: 15px;
+    margin: 0;
+    /*border-radius: 20px;*/
+    display: table-cell;
+    vertical-align: middle;
+    width: 152px;
+    height: 42px;
+}
+
+.application-services {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    /*max-width: 578px;*/
+    max-width: 600px;
+    display: inline-block;
+}
+.application-services-small {
+    display: none;
+}
+
+.well .form-control {
+    margin:5px 0;
+}
+
+.dtmc-module {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.dtmc-module li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px 0 0;
+}
+.dtmc-module li:last-child {
+    padding-right: 0;
+}
+.dtmc-module button {
+    /*padding: 6px 50px;*/
+    font-size: 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.54);
+    height: 50px;
+    width: 180px;
+    background: #00a79d;
+    border: 1px solid #00a79d;
+    color: #ffffff;
+}
+.dtmc-module button:hover  {
+    color: #ffffff;
+}
+.dtmc-header {
+    margin: 10px 0 10px;
+    padding: 0 10px;
+    color: #002B68;
+}
+
+.admin-details ul {
+    list-style: none;
+    padding: 20px 0 0 0;
+}
+.admin-details {
+    /*display: block;*/
+    margin: 17px 10px 28px 10px;
+    background: #ffffff;
+    border: 3px solid #002b68;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 336px;
+    display: inline-block;
+}
+.admin-details a {
+    color: #000000;
+    text-decoration: underline;
+}
+.image-section {
+    width: 60px;
+    height: 60px;
+    float: right;
+    border: 1px solid;
+}
+.admin-home-page {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.dataTables_wrapper a{
+    color: #333;
+}
+
+
+/*
+    Styling of edit booking, edit customer, reset password forms
+*/
+.quick-actions {
+    padding-top: 5px;
+}
+.quick-actions select, .quick-actions input, .style-select {
+    height: 28px;
+    display: inline-block;
+    margin: 0 2% 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 47%;
+    float: left;
+}
+.quick-actions .submit-button {
+    display: inline-block;
+    width: 96%;
+    text-align: right;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* Responsive Styles*/
+@media screen and (max-width: 767px){
+    .select_btn_inline {
+        margin: 8px 0 0 0;
+        text-align: center;
+    }
+    #btnLeft, #btnRight {
+        margin: 5px 0;
+    }
+    .btn-container {
+        text-align: center;
+    }
+    .panel-body .btn-container {
+        text-align: center;
+    }
+    .image-block {
+        display: inline-block;
+    }
+    .well
+    { padding: 19px 10px;}
+
+    .dtmc-module li,.dtmc-module li:last-child
+    {display: block;
+        width:100%;
+        max-width: 200px;
+        padding:10px 10px 0 0 ;
+        margin:10px auto;}
+
+}
+@media screen and (min-width: 380px) {
+    .application-services-small {
+        display: block;
+    }
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .quick-actions select, .quick-actions input {
+        width: 100%;
+    }
+    .quick-actions .btn {
+        float: right;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-left>li>a {
+        padding: 15px 25px;
+    }
+
+    .dtci-dashboard .navbar-left>li>a {
+        padding: 15px;
+    }
+
+    .panel-body label.col-md-2 {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .btn-container {
+        padding-left: 9px;
+    }
+    .admin-details {
+        margin-left: 5%;
+        flex-wrap: wrap;
+    }
+    .panel-body label.col-md-2 {
+        width: 10%;
+    }
+}
+/*
+    Overriding the default css for data tables in responsive
+*/
+@media screen and (max-width: 640px){
+    #table-list_wrapper.dataTables_wrapper .dataTables_length,
+    #table-list_wrapper.dataTables_wrapper .dataTables_filter,
+    #table-list_wrapper.dataTables_wrapper .dataTables_info,
+    #table-list_wrapper.dataTables_wrapper .dataTables_paginate{
+        text-align: left;
+    }
+}
+
+
+#placeholder {
+    height: 300px;
+}
+
+

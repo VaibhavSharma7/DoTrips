@@ -1,0 +1,26 @@
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ... info
+WARN grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ...  warn
+DEBUG grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ... debug
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationVersion :: Two
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationNameDtmc :: DTMC Config
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationVersion --- :: Two
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationNameCore :: [:]
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - developers >>>> :: [name:Vaibhav]
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - developers >>>> :: localhost
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Invoking index() end
+INFO grails.app.taglib.DtmcTagLib - DTMC : logAllExceptions >>>>>
+INFO grails.app.services.UserService - UserService :: getCurrentUser
+INFO grails.app.taglib.DtmcTagLib - DTMC : logAllExceptions >>>>>
+INFO grails.app.services.UserService - UserService :: getCurrentUser
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ... info
+WARN grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ...  warn
+DEBUG grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Hello, this is HomeController ... debug
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationVersion :: Two
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - applicationNameDtmc :: DTMC Config
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - developers >>>> :: Vaibhav
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - developers >>>> :: localhost
+INFO grails.app.controllers.com.dt.dtmc.controllers.manager.HomeController - Invoking index() end
+INFO grails.app.taglib.DtmcTagLib - DTMC : logAllExceptions >>>>>
+INFO grails.app.services.UserService - UserService :: getCurrentUser
+INFO grails.app.taglib.DtmcTagLib - DTMC : logAllExceptions >>>>>
+INFO grails.app.services.UserService - UserService :: getCurrentUser
