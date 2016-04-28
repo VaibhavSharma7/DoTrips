@@ -11,14 +11,33 @@ class User implements Serializable {
 
     transient springSecurityService
 
+
     String emailId
     String password
     String firstName
     String lastName
-    boolean enabled = true
+    /*boolean enabled = true
     boolean accountExpired
     boolean accountLocked
-    boolean passwordExpired
+    boolean passwordExpired*/
+
+    String id
+    Date passwordExpiryDate
+    int isSuperAdmin
+    Date passwordChangedDate
+    String title
+    Date dateOfBirth
+
+    int isLocked
+    String lastPassword
+    int isDeleted
+    int isPasswordExpired
+    int isPasswordChangeReqd
+    Date lastUpdatedDate
+    String lastUpdatedBy
+    Date createdDate
+    String createdBy
+
 
     User(String emailId, String password) {
         this()
@@ -49,9 +68,39 @@ class User implements Serializable {
     static constraints = {
         password blank: false, password: true
         emailId blank: false, unique: true
+        passwordExpiryDate nullable: true, blank: false
+        isSuperAdmin nullable: false, blank: false
+        passwordChangedDate nullable: true, blank: false
+        title nullable: true, blank: false
+        dateOfBirth nullable: true, blank: false
+        firstName nullable: false,blank: false
+
+        isLocked nullable: false, blank: false
+        lastPassword nullable: true, blank: false
+        isDeleted nullable: false, blank: false
+        isPasswordExpired nullable: false, blank: false
+        isPasswordChangeReqd nullable: false, blank: false
+        lastUpdatedDate nullable: false, blank: false
+        lastUpdatedBy nullable: false, blank: false
+        createdDate nullable: false, blank: false
+        createdBy nullable: false, blank: false
+
     }
 
     static mapping = {
-        password column: '`password`'
+        id generator:'uuid' , sqlType: "varchar(50)"
+        emailId sqlType: "varchar(100)"
+        password column: '`password`', sqlType: "varchar(75)"
+        lastPassword sqlType: "varchar(50)"
+        title sqlType: "varchar(5)"
+        firstName sqlType: "varchar(70)"
+        lastName sqlType: "varchar(70)"
+        isLocked sqlType: "smallint(1)", defaultValue: "0"
+        isDeleted sqlType: "smallint(1)", defaultValue: "0"
+        isPasswordExpired sqlType: "smallint(1)", defaultValue: "0"
+        isPasswordChangeReqd sqlType: "smallint(1)", defaultValue: "1"
+        isSuperAdmin sqlType: "smallint(1)", defaultValue: "0"
+        lastUpdatedBy sqlType: "varchar(50)"
+        createdBy sqlType: "varchar(50)"
     }
 }
