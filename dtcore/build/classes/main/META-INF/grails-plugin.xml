@@ -1,23 +1,2 @@
-<plugin name='dtcore' version='0.1' grailsVersion='3.1.4 &gt; *'>
-  <type>com.dt.dtcore.DtcoreGrailsPlugin</type>
-  <grailsVersion>3.1.4 &gt; *</grailsVersion>
-  <authorEmail></authorEmail>
-  <pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes>
-  <author>Your name</author>
-  <documentation>http://grails.org/plugin/dtcore</documentation>
-  <profiles>[web]</profiles>
-  <name>dtcore</name>
-  <description>Brief summary/description of the plugin.
-</description>
-  <title>Dtcore</title>
-  <version />
-  <resources>
-    <resource>dtcore.CoreUserService</resource>
-    <resource>dtcore.CoreExceptionService</resource>
-    <resource>dtcore.Application</resource>
-    <resource>dtcore.DtCoreTagLib</resource>
-    <resource>com.dt.dtcore.UrlMappings</resource>
-    <resource>com.dt.dtcore.HomeController</resource>
-    <resource>com.dt.dtcore.dtci.Vehicle</resource>
-  </resources>
-</plugin>
+<plugin grailsVersion='3.1.4 &gt; *' name='dtcore' version='0.1'><type>com.dt.dtcore.DtcoreGrailsPlugin</type><grailsVersion>3.1.4 &gt; *</grailsVersion><authorEmail></authorEmail><pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes><author>Your name</author><documentation>http://grails.org/plugin/dtcore</documentation><profiles>[web]</profiles><name>dtcore</name><description>Brief summary/description of the plugin.
+</description><title>Dtcore</title><version></version><resources><resource>dtcore.CoreUserService</resource><resource>dtcore.CoreExceptionService</resource><resource>dtcore.Application</resource><resource>dtcore.DtCoreTagLib</resource><resource>com.dt.dtcore.UrlMappings</resource><resource>com.dt.dtcore.HomeController</resource><resource>com.dt.dtcore.dtci.Vehicle</resource></resources></plugin>

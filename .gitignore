@@ -1,0 +1,13 @@
+*.iml
+.gradle/
+.idea
+.directory
+
+dtcore/.idea/
+
+
+#*.bat
+
+dtmc/.idea/
+dtmc/build/
+dtmc/out/
