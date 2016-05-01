@@ -32,6 +32,10 @@ class User extends BaseEntity implements Serializable {
     boolean isLocked
     boolean isPasswordExpired
 
+    /*boolean enabled = true
+    boolean accountExpired
+    boolean accountLocked
+    boolean passwordExpired*/
 
     static transients = ['springSecurityService']
 
@@ -51,12 +55,6 @@ class User extends BaseEntity implements Serializable {
         isPasswordChangeReqd nullable: false, blank: false
         accountExpired nullable: false, blank: false
         enabled nullable: false, blank: false
-
-        /*boolean enabled = true
-        boolean accountExpired
-        boolean accountLocked
-        boolean passwordExpired*/
-
     }
 
     static mapping = {

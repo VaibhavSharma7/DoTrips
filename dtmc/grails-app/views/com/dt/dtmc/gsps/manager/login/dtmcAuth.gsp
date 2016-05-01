@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="${gspLayout ?: 'main'}"/>
-    <dtmc:removePreviousPageCache/>
+    %{--<dtmc:removePreviousPageCache/>--}%
 </head>
 <body>
 <div class="login">
@@ -49,5 +49,14 @@
     </div>
 </div>
 </div>
+<script>
+    //Login screen : Disable browser back button once logged out.
+    $(document).ready(function(){
+        history.pushState(null, null, "auth");
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, "auth");
+        });
+    });
+</script>
 </body>
 </html>

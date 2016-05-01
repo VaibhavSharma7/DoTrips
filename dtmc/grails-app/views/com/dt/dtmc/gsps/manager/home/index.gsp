@@ -74,10 +74,14 @@
     </div>
 </div>
 
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" charset="utf8"
-        src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script>
+    //Login screen : Disable browser back button once logged out.
+    $(document).ready(function(){
+        history.pushState(null, null, "home/index");
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, "home/index");
+        });
+    });
+</script>
 </body>
 </html>

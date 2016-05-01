@@ -71,7 +71,7 @@
 %{--Main Header Ends--}%
 </g:if>
 
-<dtmc:flashMessage flashMessage="${flash.message}"/>
+%{--<dtmc:flashMessage flashMessage="${flash.message}"/>--}%
 
 <g:layoutBody></g:layoutBody>
 
