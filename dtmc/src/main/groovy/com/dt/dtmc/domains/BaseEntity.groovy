@@ -1,11 +1,11 @@
 package com.dt.dtmc.domains
 
-class BaseTrait {
+class BaseEntity {
 
+    String id
     Date lastUpdatedDate
     Date createdDate
     boolean isDeleted
-
     String lastUpdatedBy
     String createdBy
 
@@ -18,6 +18,7 @@ class BaseTrait {
     }
 
     static mapping = {
+        id generator: 'uuid', sqlType: "varchar(50)"
         isDeleted sqlType: "smallint(1)", defaultValue: "0"
         lastUpdatedBy sqlType: "varchar(50)"
         createdBy sqlType: "varchar(50)"

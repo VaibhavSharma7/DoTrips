@@ -11,10 +11,10 @@
 <div class="container-fluid parent-container">
     <div class="row">
         <h3 class="text-center dtmc-header"><g:message code="dashboard.heading.text"/></h3>
-<g:link controller="home" action="simpleUser">Simple User</g:link>
+        <g:link controller="home" action="simpleUser">Simple User</g:link>
 
 
-<g:message code="title.text.core"/>
+        <g:message code="title.text.core"/>
 
         <form class="admin-home-page">
             <ul class="application-services">
@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li class="image-block">
-                        <g:link controller="home" action="adminUser">
+                    <g:link controller="home" action="adminUser">
                         <asset:image src="dtmc-images/burj-khalifa.jpg" class="header-logo"></asset:image>
                         <p>DT Recon System</p>
                     </g:link>

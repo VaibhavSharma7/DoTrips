@@ -29,5 +29,12 @@ class DtmcTagLib {
         coreExceptionService.logException(exception)
     }
 
+    def flashMessage = { Map attrs ->
+        log.info("DTMC : flashMessage >>>>>")
+        if (attrs.flashMessage){
+            out << "<b>${attrs.flashMessage}</b>"
+        }
+    }
+
 
 }

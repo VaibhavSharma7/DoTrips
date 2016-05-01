@@ -26,20 +26,12 @@ class HomeController /*extends DtmcBaseController*/ {
             log.info("developers >>>> :: " + grailsApplication.config.map)
             log.info("developers >>>> :: " + grailsApplication.config["grails.elasticsearch.transportClientIP"])
 
-/*            User user = User.load('ff80818154619aaa0154619acd4b0000')
 
-
-            log.info("User propr ::: >>> " + user.properties)
-
-            if (user?.isLocked) {
-                log.info("User is locked")
-            } else {
-                log.info("User is not locked")
-            }*/
-
+            flash.message="Page Successfully loaded."
             homeService.renderHomePageData(true)
         }
-        catch (DTMCException e) {
+        catch (Exception e) {
+            flash.message="Some error occured"
             coreExceptionService.logException(e)
         }
         log.info("Invoking index() end")

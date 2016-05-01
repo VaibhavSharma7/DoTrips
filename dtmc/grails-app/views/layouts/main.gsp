@@ -71,6 +71,8 @@
 %{--Main Header Ends--}%
 </g:if>
 
+<dtmc:flashMessage flashMessage="${flash.message}"/>
+
 <g:layoutBody></g:layoutBody>
 
 <g:if test="${statusCode != 500}">

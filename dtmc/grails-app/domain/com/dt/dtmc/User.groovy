@@ -1,18 +1,18 @@
 package com.dt.dtmc
 
-import com.dt.dtmc.domains.BaseTrait
+import com.dt.dtmc.domains.BaseEntity
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 @EqualsAndHashCode(includes = 'emailId')
 @ToString(includes = 'emailId', includeNames = true, includePackage = false)
-class User extends BaseTrait implements Serializable {
+class User extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1
 
     transient springSecurityService
 
-    String id
+
     String emailId
     String password
     String lastPassword
@@ -60,7 +60,6 @@ class User extends BaseTrait implements Serializable {
     }
 
     static mapping = {
-        id generator: 'uuid', sqlType: "varchar(50)"
         emailId sqlType: "varchar(100)"
         password column: '`password`', sqlType: "varchar(75)"
         lastPassword sqlType: "varchar(50)"
