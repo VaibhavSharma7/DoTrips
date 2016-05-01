@@ -59,7 +59,8 @@
                     </span>
                 </span>
                 <ul>
-                    <li><strong>Your Role:</strong> <dtmc:loggedInUserFirstName/></li>
+                    ${name}
+                    <li><strong>Your Role:</strong> <dtmc:loggedInUserFirstName /></li>
                     <li><strong>Last Login:</strong> 1 Apr 2016</li>
                     <li><strong>Last Password Reset Date:</strong> 1 Apr 2016</li>
                     <li><a href="#">Link to access logs</a></li>

@@ -7,7 +7,7 @@ import grails.util.Environment
 
 // See http://logback.qos.ch/manual/groovy.html for details on configuration
 
-def bySecond = timestamp("dd-MM-yyyy")
+def dateFormat = timestamp("dd-MM-yyyy")
 def targetDir = BuildSettings.TARGET_DIR
 
 appender('STDOUT', ConsoleAppender) {
@@ -17,7 +17,7 @@ appender('STDOUT', ConsoleAppender) {
 }
 
 appender("FULL_STACKTRACE", FileAppender) {
-    file = "${targetDir}/dtmc_logs_${bySecond}.log"
+    file = "${targetDir}/dtmc_logs_${dateFormat}.log"
     append = true
     encoder(PatternLayoutEncoder) {
         pattern = "%level %logger - %msg%n"

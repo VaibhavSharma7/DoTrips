@@ -5,6 +5,7 @@ class DtmcTagLib {
     static namespace = "dtmc"
     def userService
     def errorsViewStackTracePrinter
+    def coreExceptionService
 
 
     def removePreviousPageCache = {
@@ -24,6 +25,8 @@ class DtmcTagLib {
 
     def logAllExceptions = { Map attrs ->
         log.info("DTMC : logAllExceptions >>>>>")
+        Exception exception = (Exception)attrs.exception
+        coreExceptionService.logException(exception)
     }
 
 

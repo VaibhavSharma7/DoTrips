@@ -1,5 +1,6 @@
 package dtcore
 
+import com.dt.dtcore.exceptions.DTException
 import grails.transaction.Transactional
 import org.grails.exceptions.ExceptionUtils
 

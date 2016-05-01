@@ -11,7 +11,7 @@ class DtCoreTagLib {
     def errorsViewStackTracePrinter
 
     def logAllExceptions = { Map attrs ->
-        println("LogAllExceptions called of dtcore >>>> ")
+        log.info("LogAllExceptions called of dtcore >>>> ")
         if (!(attrs?.exception instanceof Throwable)) {
             return
         }

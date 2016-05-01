@@ -1,5 +1,6 @@
 package com.dt.dtcore.dtmc
 
+import com.dt.dtmc.User
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 

@@ -1,16 +1,16 @@
 package com.dt.dtmc
 
+import com.dt.dtmc.domains.BaseTrait
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 @EqualsAndHashCode(includes = 'emailId')
 @ToString(includes = 'emailId', includeNames = true, includePackage = false)
-class User implements Serializable {
+class User extends BaseTrait implements Serializable {
 
     private static final long serialVersionUID = 1
 
     transient springSecurityService
-
 
     String id
     String emailId
@@ -19,18 +19,18 @@ class User implements Serializable {
     String title
     String firstName
     String lastName
-    String lastUpdatedBy
-    String createdBy
+
     Date passwordExpiryDate
     Date passwordChangedDate
     Date dateOfBirth
-    Date lastUpdatedDate
-    Date createdDate
-    int isSuperAdmin
-    int isLocked
-    int isDeleted
-    int isPasswordExpired
-    int isPasswordChangeReqd
+
+    boolean isSuperAdmin
+    boolean isPasswordChangeReqd
+
+    boolean enabled = true
+    boolean accountExpired
+    boolean isLocked
+    boolean isPasswordExpired
 
 
     static transients = ['springSecurityService']
@@ -46,13 +46,16 @@ class User implements Serializable {
         firstName nullable: false, blank: false
         isLocked nullable: false, blank: false
         lastPassword nullable: true, blank: false
-        isDeleted nullable: false, blank: false
+
         isPasswordExpired nullable: false, blank: false
         isPasswordChangeReqd nullable: false, blank: false
-        lastUpdatedDate nullable: false, blank: false
-        lastUpdatedBy nullable: false, blank: false
-        createdDate nullable: false, blank: false
-        createdBy nullable: false, blank: false
+        accountExpired nullable: false, blank: false
+        enabled nullable: false, blank: false
+
+        /*boolean enabled = true
+        boolean accountExpired
+        boolean accountLocked
+        boolean passwordExpired*/
 
     }
 
@@ -64,13 +67,15 @@ class User implements Serializable {
         title sqlType: "varchar(5)"
         firstName sqlType: "varchar(70)"
         lastName sqlType: "varchar(70)"
-        isLocked sqlType: "smallint(1)", defaultValue: "0"
-        isDeleted sqlType: "smallint(1)", defaultValue: "0"
-        isPasswordExpired sqlType: "smallint(1)", defaultValue: "0"
-        isPasswordChangeReqd sqlType: "smallint(1)", defaultValue: "1"
-        isSuperAdmin sqlType: "smallint(1)", defaultValue: "0"
-        lastUpdatedBy sqlType: "varchar(50)"
-        createdBy sqlType: "varchar(50)"
+        dateOfBirth sqlType: "date"
+        isLocked sqlType: "tinyint(1)", defaultValue: "0"
+
+        isPasswordExpired sqlType: "tinyint(1)", defaultValue: "0"
+        isPasswordChangeReqd sqlType: "tinyint(1)", defaultValue: "1"
+        isSuperAdmin sqlType: "tinyint(1)", defaultValue: "0"
+
+        accountExpired sqlType: "tinyint(1)", defaultValue: "0"
+        enabled sqlType: "tinyint(1)", defaultValue: "1"
     }
 
     User(String emailId, String password) {

@@ -49,10 +49,10 @@
                     </a>
                 </li>
                 <li class="image-block">
-                    <a>
+                        <g:link controller="home" action="adminUser">
                         <asset:image src="dtmc-images/burj-khalifa.jpg" class="header-logo"></asset:image>
                         <p>DT Recon System</p>
-                    </a>
+                    </g:link>
                 </li>
             </ul>
 
