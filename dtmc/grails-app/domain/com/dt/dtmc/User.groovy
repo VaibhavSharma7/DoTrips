@@ -4,8 +4,8 @@ import com.dt.dtcore.domains.BaseEntity
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
-@EqualsAndHashCode(includes = 'emailId')
-@ToString(includes = 'emailId', includeNames = true, includePackage = false)
+@EqualsAndHashCode(includes = 'username')
+@ToString(includes = 'username', includeNames = true, includePackage = false)
 class User extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1
@@ -13,7 +13,7 @@ class User extends BaseEntity implements Serializable {
     transient springSecurityService
 
 
-    String emailId
+    String username
     String password
     String lastPassword
     String title
@@ -41,7 +41,7 @@ class User extends BaseEntity implements Serializable {
 
     static constraints = {
         password blank: false, password: true
-        emailId blank: false, unique: true
+        username blank: false, unique: true,email: true
         passwordExpiryDate nullable: true, blank: false
         isSuperAdmin nullable: false, blank: false
         passwordChangedDate nullable: true, blank: false
@@ -58,7 +58,7 @@ class User extends BaseEntity implements Serializable {
     }
 
     static mapping = {
-        emailId sqlType: "varchar(100)"
+        username sqlType: "varchar(100)"
         password column: '`password`', sqlType: "varchar(75)"
         lastPassword sqlType: "varchar(50)"
         title sqlType: "varchar(5)"
@@ -75,9 +75,9 @@ class User extends BaseEntity implements Serializable {
         enabled sqlType: "tinyint(1)", defaultValue: "1"
     }
 
-    User(String emailId, String password) {
+    User(String username, String password) {
         this()
-        this.emailId = emailId
+        this.username = username
         this.password = password
     }
 

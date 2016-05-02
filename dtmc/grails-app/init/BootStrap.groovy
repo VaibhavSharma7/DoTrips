@@ -12,7 +12,7 @@ class BootStrap {
 
 
         User adminUser = new User(firstName: "Super Admin",
-                lastName: "User", emailId: "admin@dotrips.com",
+                lastName: "User", username: "admin@dotrips.com",
                 password: "admin",
                 passwordExpiryDate: new Date(),
                 isSuperAdmin:true,

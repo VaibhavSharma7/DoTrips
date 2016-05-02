@@ -6,7 +6,7 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.dt.dtmc.Us
 grails.plugin.springsecurity.authority.className = 'com.dt.dtmc.Role'
 
 grails.plugin.springsecurity.logout.postOnly = false
-grails.plugin.springsecurity.userLookup.usernamePropertyName = 'emailId'
+//grails.plugin.springsecurity.userLookup.usernamePropertyName = 'emailId'
 grails.plugin.springsecurity.userLookup.accountLockedPropertyName = 'isLocked'
 grails.plugin.springsecurity.userLookup.passwordExpiredPropertyName = 'isPasswordExpired'
 
