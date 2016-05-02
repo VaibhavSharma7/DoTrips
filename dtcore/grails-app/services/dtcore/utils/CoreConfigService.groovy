@@ -15,4 +15,7 @@ class CoreConfigService {
 
     @Value('${grails.dtcoreAppProperties.dtcoreUrl.port}')
     String dtcorePort
+
+    @Value('${cloudinary.config.baseUrl}')
+    String cloudinaryBaseUrl
 }

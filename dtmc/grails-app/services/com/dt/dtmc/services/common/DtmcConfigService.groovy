@@ -16,4 +16,8 @@ class DtmcConfigService extends CoreConfigService {
     @Value('${dtmcAppUrl.port}')
     String dtmcPort
 
+    @Value('${cloudinary.imageDirt}')
+    String cloudinaryImageDir
+
+
 }
