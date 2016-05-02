@@ -77,9 +77,9 @@
 <script>
     //Login screen : Disable browser back button once logged out.
     $(document).ready(function(){
-        history.pushState(null, null, "home/index");
+        history.pushState(null, null, "/");
         window.addEventListener('popstate', function () {
-            history.pushState(null, null, "home/index");
+            history.pushState(null, null, "/");
         });
     });
 </script>
