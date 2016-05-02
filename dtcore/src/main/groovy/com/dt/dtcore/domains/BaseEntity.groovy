@@ -1,4 +1,4 @@
-package com.dt.dtmc.domains
+package com.dt.dtcore.domains
 
 class BaseEntity {
 

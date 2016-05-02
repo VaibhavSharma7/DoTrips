@@ -1,6 +1,6 @@
 package com.dt.dtmc
 
-import com.dt.dtmc.domains.BaseEntity
+import com.dt.dtcore.domains.BaseEntity
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
