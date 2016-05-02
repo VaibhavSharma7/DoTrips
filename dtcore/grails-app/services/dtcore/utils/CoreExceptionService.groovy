@@ -1,4 +1,4 @@
-package dtcore
+package dtcore.utils
 
 import com.dt.dtcore.exceptions.DTException
 import grails.transaction.Transactional

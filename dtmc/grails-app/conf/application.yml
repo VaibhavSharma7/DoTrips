@@ -13,11 +13,16 @@ dataSource:
     username: root
     password: igdefault
 
+dtmcAppName : DTMC Config
+
 environments:
     development:
         dataSource:
             dbCreate: create-drop
             url: jdbc:mysql://localhost:3306/dt_dtmc
+        dtmcAppUrl:
+            ip: dtmcLocalhost
+            port: dtmc8080
     test:
         dataSource:
             dbCreate: update
@@ -121,5 +126,3 @@ endpoints:
     jmx:
         unique-names: true
 
-applicationVersion : Two
-applicationNameDtmc : DTMC Config

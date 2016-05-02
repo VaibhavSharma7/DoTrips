@@ -3,15 +3,11 @@ package dtcore
 import grails.transaction.Transactional
 
 @Transactional
-class CoreUserService {
-
-    def serviceMethod() {
-
-    }
+class CoreHomeService {
 
     String testMethod(){
 //        int i=5/0
-        "A testing string from testMethod() of CoreUserService ..."
+        "A testing string from testMethod() of CoreHomeService ..."
 
     }
 }

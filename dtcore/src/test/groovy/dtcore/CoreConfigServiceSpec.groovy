@@ -1,13 +1,14 @@
 package dtcore
 
+import dtcore.utils.CoreConfigService
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
  */
-@TestFor(CommonUtilService)
-class CommonUtilServiceSpec extends Specification {
+@TestFor(CoreConfigService)
+class CoreConfigServiceSpec extends Specification {
 
     def setup() {
     }

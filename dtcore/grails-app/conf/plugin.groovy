@@ -1,16 +1,13 @@
-testKey = "ddd"
-applicationVersion="One"
-map = [name: "Vaibhav"]
-
+dtcoreAppName = "DTCORE Config"
 
 environments {
     development {
         grails {
-            elasticsearch {
-                transportClientIP = "localhost"
-                transportClientPort = 9300
-                clusterName = "as_localHost"
-                isHostedOnFound = false
+            dtcoreAppProperties {
+                dtcoreUrl {
+                    ip = "dtcoreLocalhost"
+                    port = "dtcore8080"
+                }
             }
         }
     }
